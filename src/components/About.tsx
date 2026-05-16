@@ -17,7 +17,7 @@ export default function About() {
         </div>
         <div className={styles.imageWrapper}>
           <div className={styles.imagePlaceholder}>
-            <img src="/profile.jpg" alt="Bambang Adi Candra" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '6px' }} />
+            <img src="/portofolio/profile.jpg" alt="Bambang Adi Candra" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '6px' }} />
           </div>
           <div className={styles.imageFrame} />
         </div>
