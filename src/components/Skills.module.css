@@ -1,0 +1,70 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skillBadge {
+  background-color: var(--bg-card);
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-family: monospace;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skillBadge:hover {
+  background-color: rgba(20, 184, 166, 0.1);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.educationCard {
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.educationCard:hover {
+  transform: translateY(-5px);
+  background: rgba(30, 30, 30, 0.6);
+  border-color: rgba(20, 184, 166, 0.3);
+  box-shadow: 0 10px 40px -10px rgba(20, 184, 166, 0.15);
+}
+
+.degree {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.institution {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.period {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+}
